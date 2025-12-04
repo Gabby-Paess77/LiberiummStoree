@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome do Livro - Liberium Store</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/LIVROS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="IMAGENS/LOGOS/LOGOBRANCAACESSO.png" width="60">
+        </a>
+
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="escritores.html">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="sobreescritores.html">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="livrosescritores.html">Livros</a></li>
+                <li class="nav-item"><a class="nav-link" href="minhaconta.html">Minha Conta</a></li>
+                <li class="nav-item"><a class="nav-link" href="contatoescritor.html">Contato</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- CONTEÚDO PRINCIPAL -->
+<main class="page-container">
+    <div class="book-card-minimal">
+
+        <!-- CAPA -->
+        <div class="book-cover-wrapper">
+            <img src="CAPAS/capa_exemplo.png"
+                 alt="Capa do Livro"
+                 class="book-cover-image">
+        </div>
+
+        <!-- INFORMAÇÕES -->
+        <div class="book-info">
+            <h1 class="book-title">Nome do Livro</h1>
+            <p class="book-author">Autor: Nome do Autor</p>
+            <p class="book-price">Preço: R$00,00</p>
+            <p class="book-description">Descrição do livro aqui...</p>
+
+            <!-- AÇÕES -->
+            <div class="book-actions">
+
+                <!-- LER PDF -->
+                <a href="PDFS/livro_exemplo.pdf"
+                   class="action-btn read-btn"
+                   target="_blank">
+                    LER PDF
+                </a>
+
+                <!-- EDITAR -->
+                <button id="editBtn" class="action-btn edit-btn">Editar</button>
+
+                <!-- EXCLUIR -->
+                <form action="excluir_livro.html"
+                      method="POST"
+                      onsubmit="return confirm('Tem certeza que deseja excluir este livro?');">
+                    <button type="submit" class="action-btn delete-btn">
+                        Excluir
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- POPUP DE EDIÇÃO -->
+<div class="popup-overlay" id="popupOverlay">
+    <div class="popup-content">
+
+        <button class="close-btn" id="closeBtn">X</button>
+
+        <h2 class="popup-title">EDITAR LIVRO</h2>
+
+        <form action="editar_livro.html"
+              method="POST"
+              enctype="multipart/form-data">
+
+            <div class="form-group-row">
+                <input type="text"
+                       name="nomeLivro"
+                       class="form-field"
+                       value="Nome do Livro"
+                       required>
+
+                <input type="number"
+                       name="preco"
+                       class="form-field"
+                       value="00.00"
+                       step="0.01"
+                       required>
+            </div>
+
+            <div class="form-group-row">
+                <input type="text"
+                       name="nomeAutor"
+                       class="form-field"
+                       value="Nome do Autor"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <textarea name="descricao"
+                          class="form-field textarea"
+                          required
+                          minlength="10">Descrição do livro...</textarea>
+            </div>
+
+            <div class="form-group">
+                <label class="file-input-label">
+                    Alterar PDF (opcional)
+                    <input type="file" name="pdfLivro" class="file-input" accept=".pdf">
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label class="file-input-label">
+                    Alterar capa (opcional)
+                    <input type="file" name="capaLivro" class="file-input" accept="image/*">
+                </label>
+            </div>
+
+            <button type="submit" class="save-btn">SALVAR</button>
+
+        </form>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="minimal-footer">
+    <p>&copy; 2025 Liberium Store — Todos os direitos reservados</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="JS/ESCRITORES/editarlivro.js"></script>
+
+</body>
+</html>

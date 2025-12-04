@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liberium Store</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS local -->
+    <link rel="stylesheet" href="/CSS/ESCRITORES/contato.css">
+
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+    <div class="container">
+
+        <!-- LOGO -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="/IMAGENS/LOGOS/LOGOBRANCAACESSO.png" alt="Liberium Store" width="60" class="me-2">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="escritores.html">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="sobreescritores.html">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="livrosescritores.html">Livros</a></li>
+                <li class="nav-item"><a class="nav-link" href="minhaconta.html">Minha Conta</a></li>
+                <li class="nav-item"><a class="nav-link active" href="contatoescritor.html">Contato</a></li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<section class="contact-section py-5">
+    <div class="container">
+        <div class="row d-flex align-items-start">
+
+            <!-- TEXTO -->
+            <div class="col-lg-6 text-white ps-lg-5 contact-text order-lg-last">
+                <div class="d-flex flex-column">
+                    <h1 class="fw-bold mb-4 display-5 order-1 order-lg-0">Contate-Nos</h1>
+                    <h5 class="mb-3 order-2 order-lg-0">Gostaríamos muito de ouvir de você!</h5>
+                </div>
+
+                <p class="mb-4">
+                    No momento, nossa equipe de apaixonados por livros é pequena, mas estamos comandando o show.
+                    Portanto, todos os comentários, sugestões e ideias que tiver — escreva para nós!
+                </p>
+
+                <p>
+                    Somos leitores vorazes e acreditamos que a leitura é um ato social. Por isso adoramos ouvir o que
+                    vocês pensam sobre suas leituras e compartilhar nossas descobertas.
+                </p>
+            </div>
+
+            <!-- FORMULÁRIO -->
+            <div class="col-lg-6 mb-5 mb-lg-0 order-lg-first">
+                <form class="contact-form" action="contatoescritor.html" method="POST">
+                    <div class="row g-4">
+
+                        <div class="col-md-6">
+                            <input type="email" name="email" class="form-control form-control-xl"
+                                   placeholder="Digite seu E-mail..." required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <input type="text" name="nome" class="form-control form-control-xl"
+                                   placeholder="Digite seu nome..." required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <input type="password" name="senha" class="form-control form-control-xl"
+                                   placeholder="Digite sua senha..." required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <input type="tel" name="telefone" class="form-control form-control-xl"
+                                   placeholder="Digite seu telefone...">
+                        </div>
+
+                        <div class="col-12">
+                            <textarea name="mensagem" class="form-control form-control-xl" rows="6"
+                                      placeholder="Digite sua mensagem..." required></textarea>
+                        </div>
+
+                        <div class="col-12">
+                            <button type="submit" class="btn">Enviar</button>
+                        </div>
+
+                    </div>
+                </form>
+
+                <br><br><br><br>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="minimal-footer">
+    <div class="footer-content">
+        <p>&copy; 2025 Liberium Store. Todos os direitos reservados.<br>Feito por Rafael Nadae e Gabrielly Paes</p>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/JS/LEITOR/homeleitor.js"></script>
+
+</body>
+</html>
+
