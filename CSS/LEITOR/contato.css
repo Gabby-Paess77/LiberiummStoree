@@ -1,0 +1,142 @@
+/*HEADER*/
+:root {
+    --cor-cabecalho: #000000;
+    --cor-texto: #ffffff;
+}
+
+.navbar {
+    background-color: var(--cor-cabecalho) !important;
+}
+
+.navbar-nav .nav-link {
+    color: var(--cor-texto) !important;
+}
+
+.navbar-brand span {
+    color: var(--cor-texto);
+}
+
+.navbar-nav .nav-link.active {
+    color: #3f666e !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+.navbar-brand span {
+    font-size: 1.4rem;
+    color: #2c3e50;
+}
+
+.navbar-brand img {
+    width: 110px;
+    height: auto;
+}
+
+
+
+.contact-section {
+    background-color: #000;
+    color: #fff;
+}
+
+
+.contact-form .form-control {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.32);
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 12px 14px;
+    border-radius: 1px;
+}
+
+
+.contact-form textarea {
+    resize: none;
+    min-height: 140px;
+}
+
+.contact-form .form-control {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+.contact-form .form-control::placeholder {
+    color: #bbb;
+}
+.contact-form .btn {
+    background: #fff;
+    color: #000;
+    font-weight: 600;
+
+    font-size: 0.85rem;
+    padding: 10px 29px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.contact-form .btn:hover {
+    background: #ddd;
+}
+
+
+.social-links a {
+    color: #fff;
+    font-size: 1.6rem;
+    margin-right: 18px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #bbb;
+}
+
+
+.contact-text {
+    margin-top: 0;
+}
+
+/* Mobile */
+@media (max-width: 991px) {
+    .contact-text {
+        text-align: center;
+        margin-top: 2px;
+    }
+
+    .contact-text p {
+        text-align: justify;
+        max-width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+
+.minimal-footer {
+    background-color: #111;
+    color: #f5f5f5;
+    padding: 1rem 1rem;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.minimal-footer p {
+    font-size: 0.9rem;
+    color: #a8a8a8;
+}

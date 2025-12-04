@@ -1,0 +1,165 @@
+.container-fluid {
+    height: 100vh;
+}
+
+.left-section {
+    background-color: #000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+}
+
+.left-section h2 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.left-section p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.btn-outline-light {
+    border: 1px solid white;
+    color: white;
+    transition: all 0.3s;
+}
+
+.btn-outline-light:hover {
+    background-color: white;
+    color: black;
+}
+
+.right-section {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+form {
+    width: 100%;
+    max-width: 350px;
+}
+
+form h3 {
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+form input {
+    border: none;
+    border-bottom: 1px solid #000;
+    border-radius: 0;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+form input:focus {
+    box-shadow: none;
+    border-color: #333;
+}
+
+.btn-dark {
+    width: 100%;
+    border-radius: 0;
+    font-weight: 500;
+}
+
+.text-link {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.85rem;
+    text-decoration: none;
+    color: #333;
+}
+
+.text-link:hover {
+    text-decoration: underline;
+}
+
+small {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    color: white;
+    font-size: 0.7rem;
+}
+
+/* --- Responsividade --- */
+@media (max-width: 992px) {
+    .container-fluid {
+        flex-direction: column;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+        height: auto;
+    }
+
+    .left-section {
+        padding: 60px 20px;
+    }
+
+    .left-section h2 {
+        font-size: 1.3rem;
+    }
+
+    .left-section p {
+        font-size: 0.9rem;
+    }
+
+    .right-section {
+        padding: 40px 25px;
+    }
+
+    form {
+        max-width: 300px;
+    }
+
+    form input {
+        margin-bottom: 15px;
+    }
+
+    .btn-dark {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .left-section {
+        padding: 50px 20px 30px;
+    }
+
+    .left-section h2 {
+        margin-top: 3rem;
+        font-size: 1.2rem;
+    }
+
+    .left-section p {
+        font-size: 0.85rem;
+    }
+
+    .right-section {
+        padding: 30px 20px;
+    }
+
+    form {
+        max-width: 280px;
+    }
+
+    form h3 {
+        font-size: 1.1rem;
+    }
+
+    .btn-dark {
+        font-size: 0.85rem;
+    }
+}

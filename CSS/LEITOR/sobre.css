@@ -1,0 +1,235 @@
+/*HEADER*/
+:root {
+    --cor-cabecalho: #000000;
+    --cor-texto: #ffffff;
+}
+
+.navbar {
+    background-color: var(--cor-cabecalho) !important;
+}
+
+.navbar-nav .nav-link {
+    color: var(--cor-texto) !important;
+}
+
+.navbar-brand span {
+    color: var(--cor-texto);
+}
+
+.navbar-nav .nav-link.active {
+    color: #3f666e !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+.navbar-brand span {
+    font-size: 1.4rem;
+    color: #2c3e50;
+}
+
+.navbar-brand img {
+    width: 110px;
+    height: auto;
+}
+
+
+
+.welcome-section {
+    background-color: #0c0c0c;
+    color: #ffffff;
+    padding: 5rem 0;
+}
+
+.welcome-section .content-container {
+    padding: 0 1rem;
+}
+
+.welcome-section h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.welcome-section p {
+    font-size: 0.9rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.welcome-section img {
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+    display: block;
+    margin: auto;
+}
+
+
+
+.space-section {
+    background-color: #ffffff;
+    padding: 5rem 0;
+}
+
+.space-section .content-container {
+    padding: 0 1rem;
+}
+
+.space-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.space-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+
+
+
+
+/* Estilos para o iframe do Google Maps */
+.map-container {
+    position: relative;
+    padding-bottom: 50%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+.launches-section {
+    background-color: #f7f7f7;
+    padding: 5rem 0;
+}
+
+.launches-section .section-header {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.launches-section .section-header h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.launches-section .section-header p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.launches-section .launch-card img {
+    width: 100%;
+    max-width: 350px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    display: block;
+}
+
+@media (max-width: 767px) {
+    .welcome-section, .space-section, .launches-section {
+        padding: 3rem 0;
+    }
+    .welcome-section .order-first {
+        order: 1;
+    }
+    .welcome-section .order-last {
+        order: 2;
+    }
+    .space-section .order-first {
+        order: 1;
+    }
+    .space-section .order-last {
+        order: 2;
+    }
+    .text-mobile-justify p {
+        text-align: justify !important;
+    }
+    .text-mobile-justify h1, .text-mobile-justify h2 {
+        text-align: left !important;
+    }
+    .welcome-section img, .space-section .map-image {
+        max-width: 90%;
+    }
+    .launches-section .launch-card img {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+.header-contato {
+    background-color: #000000 !important;
+
+    font-size: 0.9rem;
+    line-height: 1.3;
+}
+
+.bi-whatsapp {
+    vertical-align: middle;
+}
+
+.text-email-contato {
+    text-align: left;
+}
+
+.text-whatsapp-contato {
+    text-align: right;
+}
+
+@media (max-width: 767.98px) {
+    .header-contato .row > div {
+        margin-bottom: 15px;
+        text-align: center !important;
+    }
+
+    .header-contato .row > div:last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+.minimal-footer {
+    background-color: #111;
+    color: #ffffff;
+    padding: 1rem 1rem;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.minimal-footer p {
+    font-size: 0.9rem;
+    color: #a8a8a8;
+}
